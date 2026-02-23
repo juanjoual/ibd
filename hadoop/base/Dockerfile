@@ -1,5 +1,8 @@
 FROM ubuntu:24.04
 
+ARG USERNAME=ubuntu
+ARG GROUPNAME=ubuntu
+
 RUN apt-get -qq update  \
      && DEBIAN_FRONTEND=noninteractive apt-get -qq install --no-install-recommends \
      openjdk-17-jre-headless \
@@ -11,15 +14,6 @@ RUN apt-get -qq update  \
      && rm -rf /var/lib/apt/lists/*
 
 RUN update-alternatives --install /usr/bin/python python /usr/bin/python3 2
-
-ARG USERNAME=jupyter
-ARG GROUPNAME=jupyter
-ARG UID=1000
-ARG GID=1000
-
-RUN userdel -r $(getent passwd $UID | cut -d: -f1) 2>/dev/null; \
-    groupadd -f -g $GID $GROUPNAME \
- && useradd -m -s /bin/bash -u $UID -g $GID $USERNAME
 
 RUN ln -s /usr/lib/jvm/java-17-openjdk-* /usr/lib/jvm/java-17-openjdk
 ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk

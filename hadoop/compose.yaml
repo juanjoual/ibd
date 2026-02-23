@@ -99,7 +99,7 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ./jupyter/notebook:/home/jupyter
+      - ./jupyter/notebooks:/home/jovyan/ibd
     restart: always
     networks:
       hadoopnet:

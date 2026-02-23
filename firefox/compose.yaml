@@ -16,3 +16,11 @@ services:
       - 443:5800
     volumes:
       - ./config:/config:rw
+    networks:
+      - default
+      - hadoopnet
+
+networks:
+  hadoopnet:
+    external: true
+    name: hadoop_hadoopnet
