@@ -3,11 +3,9 @@ services:
     image: hadoop-master
     hostname: master
     ports:
-      - "4040:4040"
       - "8020:8020"
       - "8088:8088"
       - "9870:9870"
-      - "10000:10000"
     volumes:
       - namenode:/opt/hadoop/dfs/name
     restart: always
