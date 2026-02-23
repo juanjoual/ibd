@@ -1,7 +1,10 @@
 FROM ubuntu:24.04
 
-ARG USERNAME=ubuntu
-ARG GROUPNAME=ubuntu
+ARG USERNAME=jovyan
+ARG GROUPNAME=jovyan
+
+# Renombramos el usuario de ubuntu a jovyan (usuario por defecto de jupyter).
+RUN groupmod -n jovyan ubuntu && usermod -l jovyan -d /home/jovyan -m ubuntu
 
 RUN apt-get -qq update  \
      && DEBIAN_FRONTEND=noninteractive apt-get -qq install --no-install-recommends \
