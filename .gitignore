@@ -1,5 +1,14 @@
 .venv
 firefox/config
 webtop/config
-hadoop/jupyter/notebooks
-notas.md
+hadoop/jupyter/notebooks/.*
+hadoop/jupyter/notebooks/old
+hadoop/jupyter/notebooks/noaa
+data
+.ipython
+.jupyter
+.ipynb_checkpoints
+mapper.py
+reducer.py
+notas
+*_Resuelto*
