@@ -12,3 +12,4 @@ mapper.py
 reducer.py
 notas
 *_Resuelto*
+spark/compose.yaml

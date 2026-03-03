@@ -3,6 +3,7 @@
 ## Componentes
 
 - [Hadoop](hadoop/) — Clúster Hadoop (HDFS + YARN + MapReduce + Jupyter)
+- [Spark](spark/) — Clúster Spark
 
 ## Herramientas auxiliares
 
