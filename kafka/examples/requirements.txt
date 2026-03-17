@@ -1,6 +1,6 @@
 confluent-kafka
 requests
-uvicorn
+uvicorn[standard]
 sseclient-py
 pyspark
 fastapi
