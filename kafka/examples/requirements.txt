@@ -3,3 +3,4 @@ requests
 uvicorn
 sseclient-py
 pyspark
+fastapi
