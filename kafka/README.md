@@ -1,6 +1,6 @@
 # Kafka
 
-- **Apache Kafka** (`apache/kafka-native:4.2.0`) — Broker en modo KRaft (sin Zookeeper), actuando como broker y controller en un único nodo.
+- **Apache Kafka** (`apache/kafka:4.2.0`) — Broker en modo KRaft (sin Zookeeper), actuando como broker y controller en un único nodo.
 - **Redpanda Console** (`redpandadata/console:v3.5.3`) — Interfaz web para monitorizar y gestionar el clúster de Kafka.
 
 ### Puertos

@@ -1,3 +1,5 @@
 confluent-kafka
 requests
 uvicorn
+sseclient-py
+pyspark
