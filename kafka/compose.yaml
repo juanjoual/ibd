@@ -17,6 +17,9 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+      KAFKA_LOG_DIRS: /var/lib/kafka/data
+    volumes:
+      - kafka-data:/var/lib/kafka/data
     networks:
       hadoopnet:
         ipv4_address: 172.28.1.31
@@ -35,6 +38,9 @@ services:
     networks:
       hadoopnet:
         ipv4_address: 172.28.1.32
+
+volumes:
+  kafka-data:
 
 networks:
   hadoopnet:
