@@ -1,4 +1,4 @@
-# Gasolineras — Pipeline Kafka + PostgreSQL
+# Gasolineras: Kafka → PostgreSQL → Grafana
 
 Pipeline de datos en tiempo real que descarga los precios de todas las gasolineras de España desde la API del Ministerio de Industria, los publica en un topic de Kafka y los almacena en PostgreSQL (TimescaleDB + PostGIS) para su consulta y análisis.
 
